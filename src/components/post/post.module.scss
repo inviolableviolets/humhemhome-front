@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardData {
+  width: 15em;
+  height: 15em;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (max-width: 500px) {
+    width: 10em;
+    height: 10em;
+  }
+
+  @media (max-width: 400px) {
+    width: 8em;
+    height: 8em;
+  }
+
+  @media (max-width: 350px) {
+    width: 6em;
+    height: 5em;
+  }
+}
+
+.cardTitle {
+  color: black;
+  width: 15em;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+}
+
+.cardId {
+  color: yellow;
+  font-size: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+.button {
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 0%;
+  border: none;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.submissionsControls {
+  display: flex;
+}
+
+.delete,
+.modify {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 14em;
+  padding: 0.5em;
+  opacity: 0;
+}
+
+.delete button,
+.modify a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete button:hover,
+.modify a:hover {
+  mix-blend-mode: none;
+  color: yellow;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardData:hover {
+  span {
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+    height: fit-content;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}

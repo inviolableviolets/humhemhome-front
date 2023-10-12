@@ -1,0 +1,62 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.15rem;
+  font-weight: lighter;
+  scroll-behavior: smooth;
+}
+
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+footer,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+// body::-webkit-scrollbar {
+//   width: 0.2rem;
+// }
+
+// body::-webkit-scrollbar-track {
+//   background: linear-gradient(black, gray, black);
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   border: 1px solid yellow;
+//   border-radius: 25px;
+// }
